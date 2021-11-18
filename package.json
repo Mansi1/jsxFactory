@@ -1,0 +1,25 @@
+{
+  "name": "jsxFactory",
+  "version": "1.0.0",
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "exports": "dist/index.modern.js",
+  "module": "dist/index.module.js",
+  "unpkg": "dist/index.umd.js",
+  "repository": "git@github.com:Mansi1/jsxFactory.git",
+  "author": "Michael Mannseicher <m.mansi1@gmx.net>",
+  "license": "MIT",
+  "scripts": {
+    "clean": "npx st-rm-rf dist",
+    "prebuild": "yarn clean && tsc -p tsconfig.dist.json",
+    "build": "microbundle",
+    "watch": "microbundle watch",
+    "postbuild": "npx st-cp package.json README.md LICENSE dist"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "microbundle": "^0.14.2"
+  }
+}
