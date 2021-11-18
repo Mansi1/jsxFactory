@@ -1,6 +1,6 @@
 {
   "name": "jsx-factory",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "source": "src/index.ts",
   "main": "dist/index.js",
   "exports": "dist/index.modern.js",
@@ -16,7 +16,7 @@
     "watch": "microbundle watch",
     "postbuild": "npx st-cp package.json README.md LICENSE dist"
   },
-  "dependencies": {
+  "devDependencies": {
     "typescript": "^4.5.2",
     "microbundle": "^0.14.2"
   }
