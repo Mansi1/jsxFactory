@@ -1,4 +1,4 @@
-export type CreateElementFn = (tagName: string, attributes: JSX.ElementAttributesProperty | null, ...children: any[]) => Element | DocumentFragment;
+export type CreateElementFn = (tagName: string, props: { [propName: string]: any } | null, ...children: any[]) => Element | DocumentFragment;
 
 export interface CustomFactoryConfig {
     createElement: CreateElementFn
