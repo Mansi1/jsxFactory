@@ -1,5 +1,6 @@
 # jsxFactory
-A project to switch jsxFactory @ runtime
+
+build independent libraries and use it in several frameworks react, vue, springtype or other frameworks
 
 usage:
 
